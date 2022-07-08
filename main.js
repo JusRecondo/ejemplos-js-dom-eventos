@@ -1,22 +1,13 @@
-//Livecoding Clase 10
+//Manipulación del DOM y Eventos
 
-/* 
-* 1- Escuchar evento click en boton y cambiar color de fondo del body, agregando clase css
-* 2- Escuchar evento input en un input text, tomar ese texto y ponerlo en un parrafo
-* 3- Detectar eventos en multiples elementos (lista de nodos). 
-*    3a - Seleccionar todos los items del menu y guardar en constante
-*    3b - Escuchar en todos los items el evento click con forEach()
-*    3c - Agregar clase "active" al item seleccionado y quitar del anterior
-**/
+//Ejemplos 1 y 2 del PPT: 
 
-
-//Eventos
-
-//Ejemplos 1 y 2 del PPT: eventos load y click
+//Ejemplo evento load
 window.addEventListener('load', function() {
     console.log('Página cargada!')
 });
 
+//Ejemplo evento click en boton
 const testButton = document.querySelector('button#test');
 
 testButton.addEventListener('click', test);
@@ -25,7 +16,7 @@ function test() {
     console.log('Probando los eventos');
 }
 
-//Ejemplo 3 del PPT: evento submit
+//Ejemplo 3: evento submit
 const form = document.querySelector('form');
 
 form.addEventListener('submit', submitHandlder);
@@ -36,9 +27,10 @@ function submitHandlder(e) {
     message.classList.add('show');
 }
 
-//Livecoding
 
-//1 - Detectar click y agregar/quitar clase
+//LiveCoding
+
+//1 - Detectar click y agregar/quitar clase en body
 const btnCambiarFondo = document.querySelector('#cambiar-fondo');
 
 btnCambiarFondo.addEventListener('click', cambiarFondo);
@@ -53,7 +45,7 @@ function cambiarFondo() {
 const testInput = document.querySelector('input#test');
 
 testInput.addEventListener('input', function(e) {
-    /* Mostrar en consola que el evento es un objeto también,
+    /* Ver en consola que el evento es un objeto también,
     *  explicar así cómo obtenemos el value del input.
     */
     //la función handler recibe como parámetro el evento que es representado como un objeto
