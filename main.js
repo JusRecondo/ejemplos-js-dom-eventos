@@ -36,8 +36,7 @@ const btnCambiarFondo = document.querySelector('#cambiar-fondo');
 btnCambiarFondo.addEventListener('click', cambiarFondo);
 
 function cambiarFondo() {
-    //luego mejorar con classList.toggle 
-    document.body.classList.add('cambiar-fondo');
+    document.body.classList.toggle('cambiar-fondo');
 }
 
 
