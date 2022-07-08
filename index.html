@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clase 10 livecoding y ejemplos</title>
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Livecoding clase 10</h1>
+
+        <nav>
+            <ul id="menu">
+                <li class="menu-item active">
+                    <a href="#inicio">Inicio</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#about">About</a>
+                </li>
+                <li class="menu-item">
+                    <a href="#contacto">Contacto</a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <main>
+        <section id="inicio">
+
+            <h2>Manipulando el DOM en respuesta a Eventos</h2>
+
+            <h3>Evento click</h3>
+
+            <button id="test">Probar eventos</button>
+            <button id="cambiar-fondo">Cambiar color de fondo</button>
+
+            <hr>
+
+            <h3>Evento input</h3>
+
+            <label for="test">Escribe algo en el input...</label>
+            <input type="text" name="test" id="test">
+
+            <p class="info">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, laboriosam velit adipisci magni sint distinctio quos cum. Temporibus facere non consequatur exercitationem voluptates, sapiente neque quasi iste aspernatur magnam accusamus, consequuntur excepturi numquam laboriosam nobis officiis nesciunt? Unde quae quia quas quam laboriosam ratione sed nihil pariatur eius officia. Nisi quisquam iure assumenda vitae atque doloribus quibusdam! Voluptate enim alias provident commodi autem harum eligendi pariatur quam. Tempore perspiciatis minima ipsum nihil, officia doloremque est repudiandae eveniet tenetur, praesentium nostrum consectetur. Nesciunt molestias soluta eum delectus deserunt, aut deleniti. Quos accusamus voluptatibus quia molestias accusantium laudantium sequi asperiores numquam vitae!</p>
+
+            <hr>
+
+            <h3>Evento submit</h3>
+
+            <form>
+                <label for="email">Ingresa tu email</label>
+                <input type="email" name="email" id="email">
+
+                <button type="submit">
+                    Suscrbirme
+                </button>
+            </form>
+
+            <p id="message">Te has suscrito al newsletter!</p>
+
+            <hr>
+
+        </section>
+
+        <section id="about">
+
+            <h2>Sección About</h2>
+
+        </section>
+
+        <section id="contacto">
+
+            <h2>Sección Contacto</h2>
+            
+        </section>
+
+    </main>
+
+
+    <!-- Así vinculamos el archivo JS -->
+    <script src="main.js"></script>
+</body>
+</html>
+
